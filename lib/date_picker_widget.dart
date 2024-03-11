@@ -22,10 +22,12 @@ class DatePicker extends StatefulWidget {
   final DatePickerController? controller;
 
   /// Text color for the selected Date
-  final Color selectedTextColor;
-
+  //final Color selectedTextColor;
+  final Color? selectedTextColor;
+  
   /// Background color for the selector
   final Color selectionColor;
+  
 
   /// Text Color for the deactivated dates
   final Color deactivatedColor;
@@ -69,7 +71,7 @@ class DatePicker extends StatefulWidget {
     this.monthTextStyle = defaultMonthTextStyle,
     this.dayTextStyle = defaultDayTextStyle,
     this.dateTextStyle = defaultDateTextStyle,
-    this.selectedTextColor = Colors.white,
+    this.selectedTextColor = selectedTextColor ?? Colors.white,
     this.selectionColor = AppColors.defaultSelectionColor,
     this.deactivatedColor = AppColors.defaultDeactivatedColor,
     this.initialSelectedDate,
