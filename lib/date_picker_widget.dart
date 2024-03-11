@@ -71,7 +71,7 @@ class DatePicker extends StatefulWidget {
     this.monthTextStyle = defaultMonthTextStyle,
     this.dayTextStyle = defaultDayTextStyle,
     this.dateTextStyle = defaultDateTextStyle,
-    this.selectedTextColor = selectedTextColor ?? Colors.white,
+    this.selectedTextColor = this.selectedTextColor ?? Colors.white,
     this.selectionColor = AppColors.defaultSelectionColor,
     this.deactivatedColor = AppColors.defaultDeactivatedColor,
     this.initialSelectedDate,
